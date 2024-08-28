@@ -9,21 +9,131 @@
 /* Begin PBXBuildFile section */
 		B5DCCA7B2C6E43CE00C730F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCCA7A2C6E43CE00C730F3 /* AppDelegate.swift */; };
 		B5DCCA7D2C6E43CE00C730F3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCCA7C2C6E43CE00C730F3 /* SceneDelegate.swift */; };
-		B5DCCA7F2C6E43CE00C730F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCCA7E2C6E43CE00C730F3 /* ViewController.swift */; };
-		B5DCCA822C6E43CE00C730F3 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = B5DCCA812C6E43CE00C730F3 /* Base */; };
+		B5DCCA7F2C6E43CE00C730F3 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCCA7E2C6E43CE00C730F3 /* FeedViewController.swift */; };
 		B5DCCA842C6E43CF00C730F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5DCCA832C6E43CF00C730F3 /* Assets.xcassets */; };
 		B5DCCA872C6E43CF00C730F3 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = B5DCCA862C6E43CF00C730F3 /* Base */; };
+		B5DCCA902C6E492B00C730F3 /* StripeTerminal in Frameworks */ = {isa = PBXBuildFile; productRef = B5DCCA8F2C6E492B00C730F3 /* StripeTerminal */; };
+		B5DCCA9B2C6E4A4200C730F3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCCA9A2C6E4A4200C730F3 /* LoginViewController.swift */; };
+		B5DCCAA32C6E4AE000C730F3 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCCAA22C6E4AE000C730F3 /* APIManager.swift */; };
+		B5DCCAA52C6E4B3300C730F3 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCCAA42C6E4B3300C730F3 /* Logger.swift */; };
+		B5DCCAA72C6E4B3A00C730F3 /* LocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCCAA62C6E4B3A00C730F3 /* LocalStorage.swift */; };
+		B5DCCAA92C6E4BB900C730F3 /* Restaurnat.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCCAA82C6E4BB900C730F3 /* Restaurnat.swift */; };
+		B5DCCAAB2C6E4BC100C730F3 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCCAAA2C6E4BC100C730F3 /* Customer.swift */; };
+		B5DCCAAD2C6E4BCB00C730F3 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCCAAC2C6E4BCB00C730F3 /* MenuItem.swift */; };
+		B5DCCAAF2C6E4BE500C730F3 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCCAAE2C6E4BE500C730F3 /* LoginResponse.swift */; };
+		B5DCCAB12C6E4BED00C730F3 /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCCAB02C6E4BED00C730F3 /* AuthResponse.swift */; };
+		B5DCCAB32C6E4BF400C730F3 /* OrderResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCCAB22C6E4BF400C730F3 /* OrderResponse.swift */; };
+		B5DCCAB52C6E4BFA00C730F3 /* VoidResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCCAB42C6E4BFA00C730F3 /* VoidResponse.swift */; };
+		B5DCCAB72C6E4C0600C730F3 /* MenuResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCCAB62C6E4C0600C730F3 /* MenuResponse.swift */; };
+		B5DCCABA2C6E4C4E00C730F3 /* UIStackView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCCAB92C6E4C4E00C730F3 /* UIStackView+Ext.swift */; };
+		B5DCCABC2C6E4C5600C730F3 /* NSNumberFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCCABB2C6E4C5600C730F3 /* NSNumberFormatter.swift */; };
+		B5DCCABE2C6E4C5E00C730F3 /* Codable+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCCABD2C6E4C5E00C730F3 /* Codable+Ext.swift */; };
+		B5DCCAC02C6E4D0500C730F3 /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCCABF2C6E4D0500C730F3 /* SectionView.swift */; };
+		B5DCCAC22C6E4D6000C730F3 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCCAC12C6E4D6000C730F3 /* BaseViewController.swift */; };
+		B5DCCAC72C6E4E1B00C730F3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCCAC32C6E4E1B00C730F3 /* Constants.swift */; };
+		B5DCCAC82C6E4E1B00C730F3 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCCAC42C6E4E1B00C730F3 /* Globals.swift */; };
+		B5DCCAC92C6E4E1B00C730F3 /* OrderRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCCAC52C6E4E1B00C730F3 /* OrderRequest.swift */; };
+		B5DCCACB2C6E4E3200C730F3 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCCACA2C6E4E3200C730F3 /* UIViewController+Ext.swift */; };
+		B5DCCACD2C6E4ED100C730F3 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCCACC2C6E4ED100C730F3 /* String+Ext.swift */; };
+		B5DCCACF2C6E4EF300C730F3 /* Collection+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCCACE2C6E4EF300C730F3 /* Collection+Ext.swift */; };
+		B5DCCAD12C6E4F0A00C730F3 /* TipsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCCAD02C6E4F0A00C730F3 /* TipsRequest.swift */; };
+		B5DCCAD92C6E507300C730F3 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = B5DCCAD82C6E507300C730F3 /* SnapKit */; };
+		B5DCCADD2C6E545800C730F3 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCCADC2C6E545800C730F3 /* MenuViewController.swift */; };
+		B5DCCAE02C738AF900C730F3 /* FeedCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCCADF2C738AF900C730F3 /* FeedCoordinator.swift */; };
+		B5DCCAE42C73A64400C730F3 /* ReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCCAE32C73A64400C730F3 /* ReaderViewController.swift */; };
+		B5DCCAE62C73ACBF00C730F3 /* SectionTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCCAE52C73ACBF00C730F3 /* SectionTitle.swift */; };
+		B5DCCAE82C73AD4200C730F3 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCCAE72C73AD4200C730F3 /* UILabel.swift */; };
+		B5DCCAEA2C73AE1D00C730F3 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCCAE92C73AE1D00C730F3 /* CustomButton.swift */; };
+		B5DCCAEC2C73B54D00C730F3 /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCCAEB2C73B54D00C730F3 /* UIButton+.swift */; };
+		B5DCCAEE2C74C2FB00C730F3 /* StripeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCCAED2C74C2FB00C730F3 /* StripeManager.swift */; };
+		B5DCCAF12C74CC8A00C730F3 /* StripeAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCCAF02C74CC8A00C730F3 /* StripeAPIClient.swift */; };
+		B5DCCAF32C74CD8500C730F3 /* StripeDiscoveryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCCAF22C74CD8500C730F3 /* StripeDiscoveryController.swift */; };
+		B5DCCAF52C74CFAC00C730F3 /* StripeBluetoothController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCCAF42C74CFAC00C730F3 /* StripeBluetoothController.swift */; };
+		B5DCCAF72C74D12B00C730F3 /* StripeUpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCCAF62C74D12B00C730F3 /* StripeUpdateView.swift */; };
+		B5DCCAF92C74D19800C730F3 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCCAF82C74D19800C730F3 /* UIApplication.swift */; };
+		B5DCCAFB2C74D23700C730F3 /* TappableClippedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCCAFA2C74D23700C730F3 /* TappableClippedView.swift */; };
+		B5DCCAFD2C74D26700C730F3 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCCAFC2C74D26700C730F3 /* UIView+.swift */; };
+		B5DCCAFF2C74D2F000C730F3 /* StripeConnectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCCAFE2C74D2F000C730F3 /* StripeConnectionController.swift */; };
+		B5DCCB012C74E23B00C730F3 /* StripePaymentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCCB002C74E23B00C730F3 /* StripePaymentController.swift */; };
+		B5DCCB032C74E2AF00C730F3 /* SecretResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCCB022C74E2AF00C730F3 /* SecretResponse.swift */; };
+		B5DCCB052C767B6800C730F3 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCCB042C767B6800C730F3 /* PaymentViewController.swift */; };
+		B5DCCB092C7CEFDE00C730F3 /* TipRecommendations.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCCB082C7CEFDE00C730F3 /* TipRecommendations.swift */; };
+		B5DCCB0B2C7CF92400C730F3 /* ReaderFailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCCB0A2C7CF92400C730F3 /* ReaderFailedView.swift */; };
+		B5DCCB0D2C7CF94300C730F3 /* ReaderSuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCCB0C2C7CF94300C730F3 /* ReaderSuccessView.swift */; };
+		B5DCCB0F2C7CF95F00C730F3 /* ReaderConnectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCCB0E2C7CF95F00C730F3 /* ReaderConnectionView.swift */; };
+		B5DCCB112C7CF97A00C730F3 /* ReaderDiscoveryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCCB102C7CF97A00C730F3 /* ReaderDiscoveryView.swift */; };
+		B5DCCB142C7E0D6000C730F3 /* OrderHistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCCB132C7E0D6000C730F3 /* OrderHistoryController.swift */; };
+		B5DCCB162C7E182400C730F3 /* OrderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCCB152C7E182400C730F3 /* OrderItem.swift */; };
+		B5DCCB182C7E184900C730F3 /* PaymentMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCCB172C7E184900C730F3 /* PaymentMethod.swift */; };
+		B5DCCB1A2C7E187300C730F3 /* RefundItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCCB192C7E187300C730F3 /* RefundItem.swift */; };
+		B5DCCB1C2C7E18FA00C730F3 /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCCB1B2C7E18FA00C730F3 /* Date+.swift */; };
+		B5DCCB1E2C7E1D2C00C730F3 /* FoodSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCCB1D2C7E1D2C00C730F3 /* FoodSection.swift */; };
+		B5DCCB232C7F5D7D00C730F3 /* ConsoleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCCB222C7F5D7D00C730F3 /* ConsoleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B5DCCA772C6E43CE00C730F3 /* StripeReaderTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StripeReaderTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5DCCA7A2C6E43CE00C730F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5DCCA7C2C6E43CE00C730F3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B5DCCA7E2C6E43CE00C730F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B5DCCA812C6E43CE00C730F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B5DCCA7E2C6E43CE00C730F3 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		B5DCCA832C6E43CF00C730F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5DCCA862C6E43CF00C730F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5DCCA882C6E43CF00C730F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5DCCA9A2C6E4A4200C730F3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B5DCCAA22C6E4AE000C730F3 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		B5DCCAA42C6E4B3300C730F3 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		B5DCCAA62C6E4B3A00C730F3 /* LocalStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalStorage.swift; sourceTree = "<group>"; };
+		B5DCCAA82C6E4BB900C730F3 /* Restaurnat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restaurnat.swift; sourceTree = "<group>"; };
+		B5DCCAAA2C6E4BC100C730F3 /* Customer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		B5DCCAAC2C6E4BCB00C730F3 /* MenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		B5DCCAAE2C6E4BE500C730F3 /* LoginResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		B5DCCAB02C6E4BED00C730F3 /* AuthResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthResponse.swift; sourceTree = "<group>"; };
+		B5DCCAB22C6E4BF400C730F3 /* OrderResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderResponse.swift; sourceTree = "<group>"; };
+		B5DCCAB42C6E4BFA00C730F3 /* VoidResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoidResponse.swift; sourceTree = "<group>"; };
+		B5DCCAB62C6E4C0600C730F3 /* MenuResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuResponse.swift; sourceTree = "<group>"; };
+		B5DCCAB92C6E4C4E00C730F3 /* UIStackView+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStackView+Ext.swift"; sourceTree = "<group>"; };
+		B5DCCABB2C6E4C5600C730F3 /* NSNumberFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSNumberFormatter.swift; sourceTree = "<group>"; };
+		B5DCCABD2C6E4C5E00C730F3 /* Codable+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Codable+Ext.swift"; sourceTree = "<group>"; };
+		B5DCCABF2C6E4D0500C730F3 /* SectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
+		B5DCCAC12C6E4D6000C730F3 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		B5DCCAC32C6E4E1B00C730F3 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B5DCCAC42C6E4E1B00C730F3 /* Globals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
+		B5DCCAC52C6E4E1B00C730F3 /* OrderRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderRequest.swift; sourceTree = "<group>"; };
+		B5DCCACA2C6E4E3200C730F3 /* UIViewController+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
+		B5DCCACC2C6E4ED100C730F3 /* String+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		B5DCCACE2C6E4EF300C730F3 /* Collection+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Collection+Ext.swift"; sourceTree = "<group>"; };
+		B5DCCAD02C6E4F0A00C730F3 /* TipsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipsRequest.swift; sourceTree = "<group>"; };
+		B5DCCADC2C6E545800C730F3 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		B5DCCADF2C738AF900C730F3 /* FeedCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCoordinator.swift; sourceTree = "<group>"; };
+		B5DCCAE32C73A64400C730F3 /* ReaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderViewController.swift; sourceTree = "<group>"; };
+		B5DCCAE52C73ACBF00C730F3 /* SectionTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTitle.swift; sourceTree = "<group>"; };
+		B5DCCAE72C73AD4200C730F3 /* UILabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
+		B5DCCAE92C73AE1D00C730F3 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		B5DCCAEB2C73B54D00C730F3 /* UIButton+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+.swift"; sourceTree = "<group>"; };
+		B5DCCAED2C74C2FB00C730F3 /* StripeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripeManager.swift; sourceTree = "<group>"; };
+		B5DCCAF02C74CC8A00C730F3 /* StripeAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripeAPIClient.swift; sourceTree = "<group>"; };
+		B5DCCAF22C74CD8500C730F3 /* StripeDiscoveryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripeDiscoveryController.swift; sourceTree = "<group>"; };
+		B5DCCAF42C74CFAC00C730F3 /* StripeBluetoothController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripeBluetoothController.swift; sourceTree = "<group>"; };
+		B5DCCAF62C74D12B00C730F3 /* StripeUpdateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StripeUpdateView.swift; sourceTree = "<group>"; };
+		B5DCCAF82C74D19800C730F3 /* UIApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
+		B5DCCAFA2C74D23700C730F3 /* TappableClippedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TappableClippedView.swift; sourceTree = "<group>"; };
+		B5DCCAFC2C74D26700C730F3 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		B5DCCAFE2C74D2F000C730F3 /* StripeConnectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripeConnectionController.swift; sourceTree = "<group>"; };
+		B5DCCB002C74E23B00C730F3 /* StripePaymentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripePaymentController.swift; sourceTree = "<group>"; };
+		B5DCCB022C74E2AF00C730F3 /* SecretResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecretResponse.swift; sourceTree = "<group>"; };
+		B5DCCB042C767B6800C730F3 /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		B5DCCB082C7CEFDE00C730F3 /* TipRecommendations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipRecommendations.swift; sourceTree = "<group>"; };
+		B5DCCB0A2C7CF92400C730F3 /* ReaderFailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderFailedView.swift; sourceTree = "<group>"; };
+		B5DCCB0C2C7CF94300C730F3 /* ReaderSuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderSuccessView.swift; sourceTree = "<group>"; };
+		B5DCCB0E2C7CF95F00C730F3 /* ReaderConnectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderConnectionView.swift; sourceTree = "<group>"; };
+		B5DCCB102C7CF97A00C730F3 /* ReaderDiscoveryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderDiscoveryView.swift; sourceTree = "<group>"; };
+		B5DCCB132C7E0D6000C730F3 /* OrderHistoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderHistoryController.swift; sourceTree = "<group>"; };
+		B5DCCB152C7E182400C730F3 /* OrderItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderItem.swift; sourceTree = "<group>"; };
+		B5DCCB172C7E184900C730F3 /* PaymentMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentMethod.swift; sourceTree = "<group>"; };
+		B5DCCB192C7E187300C730F3 /* RefundItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefundItem.swift; sourceTree = "<group>"; };
+		B5DCCB1B2C7E18FA00C730F3 /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
+		B5DCCB1D2C7E1D2C00C730F3 /* FoodSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodSection.swift; sourceTree = "<group>"; };
+		B5DCCB222C7F5D7D00C730F3 /* ConsoleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +141,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5DCCA902C6E492B00C730F3 /* StripeTerminal in Frameworks */,
+				B5DCCAD92C6E507300C730F3 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,13 +170,171 @@
 			children = (
 				B5DCCA7A2C6E43CE00C730F3 /* AppDelegate.swift */,
 				B5DCCA7C2C6E43CE00C730F3 /* SceneDelegate.swift */,
-				B5DCCA7E2C6E43CE00C730F3 /* ViewController.swift */,
-				B5DCCA802C6E43CE00C730F3 /* Main.storyboard */,
+				B5DCCA7E2C6E43CE00C730F3 /* FeedViewController.swift */,
 				B5DCCA832C6E43CF00C730F3 /* Assets.xcassets */,
 				B5DCCA852C6E43CF00C730F3 /* LaunchScreen.storyboard */,
 				B5DCCA882C6E43CF00C730F3 /* Info.plist */,
+				B5DCCAB82C6E4C4600C730F3 /* Helpers */,
+				B5DCCAC62C6E4E1B00C730F3 /* Constants */,
+				B5DCCA9F2C6E4A6A00C730F3 /* Managers */,
+				B5DCCA9C2C6E4A4C00C730F3 /* Base */,
+				B5DCCA9E2C6E4A5B00C730F3 /* Models */,
+				B5DCCADE2C738AD700C730F3 /* Coordinator */,
+				B5DCCA942C6E49FE00C730F3 /* Login */,
+				B5DCCA912C6E49C700C730F3 /* Reader Flow */,
+				B5DCCA922C6E49E000C730F3 /* Menu  */,
+				B5DCCA932C6E49EA00C730F3 /* Payment Flow */,
+				B5DCCB122C7E0D4300C730F3 /* Order History */,
+				B5DCCB212C7F5D6500C730F3 /* Console */,
 			);
 			path = StripeReaderTest;
+			sourceTree = "<group>";
+		};
+		B5DCCA912C6E49C700C730F3 /* Reader Flow */ = {
+			isa = PBXGroup;
+			children = (
+				B5DCCAE32C73A64400C730F3 /* ReaderViewController.swift */,
+				B5DCCB102C7CF97A00C730F3 /* ReaderDiscoveryView.swift */,
+				B5DCCB0E2C7CF95F00C730F3 /* ReaderConnectionView.swift */,
+				B5DCCB0C2C7CF94300C730F3 /* ReaderSuccessView.swift */,
+				B5DCCB0A2C7CF92400C730F3 /* ReaderFailedView.swift */,
+			);
+			path = "Reader Flow";
+			sourceTree = "<group>";
+		};
+		B5DCCA922C6E49E000C730F3 /* Menu  */ = {
+			isa = PBXGroup;
+			children = (
+				B5DCCADC2C6E545800C730F3 /* MenuViewController.swift */,
+			);
+			path = "Menu ";
+			sourceTree = "<group>";
+		};
+		B5DCCA932C6E49EA00C730F3 /* Payment Flow */ = {
+			isa = PBXGroup;
+			children = (
+				B5DCCB042C767B6800C730F3 /* PaymentViewController.swift */,
+			);
+			path = "Payment Flow";
+			sourceTree = "<group>";
+		};
+		B5DCCA942C6E49FE00C730F3 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B5DCCA9A2C6E4A4200C730F3 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		B5DCCA9C2C6E4A4C00C730F3 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				B5DCCAFA2C74D23700C730F3 /* TappableClippedView.swift */,
+				B5DCCAF62C74D12B00C730F3 /* StripeUpdateView.swift */,
+				B5DCCAE52C73ACBF00C730F3 /* SectionTitle.swift */,
+				B5DCCB1D2C7E1D2C00C730F3 /* FoodSection.swift */,
+				B5DCCABF2C6E4D0500C730F3 /* SectionView.swift */,
+				B5DCCAC12C6E4D6000C730F3 /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		B5DCCA9E2C6E4A5B00C730F3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B5DCCB022C74E2AF00C730F3 /* SecretResponse.swift */,
+				B5DCCAC52C6E4E1B00C730F3 /* OrderRequest.swift */,
+				B5DCCAD02C6E4F0A00C730F3 /* TipsRequest.swift */,
+				B5DCCAB02C6E4BED00C730F3 /* AuthResponse.swift */,
+				B5DCCAAE2C6E4BE500C730F3 /* LoginResponse.swift */,
+				B5DCCAB22C6E4BF400C730F3 /* OrderResponse.swift */,
+				B5DCCB172C7E184900C730F3 /* PaymentMethod.swift */,
+				B5DCCB152C7E182400C730F3 /* OrderItem.swift */,
+				B5DCCB192C7E187300C730F3 /* RefundItem.swift */,
+				B5DCCAB42C6E4BFA00C730F3 /* VoidResponse.swift */,
+				B5DCCAB62C6E4C0600C730F3 /* MenuResponse.swift */,
+				B5DCCAAA2C6E4BC100C730F3 /* Customer.swift */,
+				B5DCCAA82C6E4BB900C730F3 /* Restaurnat.swift */,
+				B5DCCAAC2C6E4BCB00C730F3 /* MenuItem.swift */,
+				B5DCCB082C7CEFDE00C730F3 /* TipRecommendations.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B5DCCA9F2C6E4A6A00C730F3 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				B5DCCAEF2C74CC8200C730F3 /* Stripe */,
+				B5DCCAA22C6E4AE000C730F3 /* APIManager.swift */,
+				B5DCCAA42C6E4B3300C730F3 /* Logger.swift */,
+				B5DCCAA62C6E4B3A00C730F3 /* LocalStorage.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		B5DCCAB82C6E4C4600C730F3 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B5DCCAF82C74D19800C730F3 /* UIApplication.swift */,
+				B5DCCAEB2C73B54D00C730F3 /* UIButton+.swift */,
+				B5DCCAE92C73AE1D00C730F3 /* CustomButton.swift */,
+				B5DCCAE72C73AD4200C730F3 /* UILabel.swift */,
+				B5DCCACE2C6E4EF300C730F3 /* Collection+Ext.swift */,
+				B5DCCACC2C6E4ED100C730F3 /* String+Ext.swift */,
+				B5DCCABB2C6E4C5600C730F3 /* NSNumberFormatter.swift */,
+				B5DCCAB92C6E4C4E00C730F3 /* UIStackView+Ext.swift */,
+				B5DCCABD2C6E4C5E00C730F3 /* Codable+Ext.swift */,
+				B5DCCACA2C6E4E3200C730F3 /* UIViewController+Ext.swift */,
+				B5DCCAFC2C74D26700C730F3 /* UIView+.swift */,
+				B5DCCB1B2C7E18FA00C730F3 /* Date+.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		B5DCCAC62C6E4E1B00C730F3 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				B5DCCAC32C6E4E1B00C730F3 /* Constants.swift */,
+				B5DCCAC42C6E4E1B00C730F3 /* Globals.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		B5DCCADE2C738AD700C730F3 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				B5DCCADF2C738AF900C730F3 /* FeedCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		B5DCCAEF2C74CC8200C730F3 /* Stripe */ = {
+			isa = PBXGroup;
+			children = (
+				B5DCCAF02C74CC8A00C730F3 /* StripeAPIClient.swift */,
+				B5DCCAED2C74C2FB00C730F3 /* StripeManager.swift */,
+				B5DCCAF22C74CD8500C730F3 /* StripeDiscoveryController.swift */,
+				B5DCCAFE2C74D2F000C730F3 /* StripeConnectionController.swift */,
+				B5DCCAF42C74CFAC00C730F3 /* StripeBluetoothController.swift */,
+				B5DCCB002C74E23B00C730F3 /* StripePaymentController.swift */,
+			);
+			path = Stripe;
+			sourceTree = "<group>";
+		};
+		B5DCCB122C7E0D4300C730F3 /* Order History */ = {
+			isa = PBXGroup;
+			children = (
+				B5DCCB132C7E0D6000C730F3 /* OrderHistoryController.swift */,
+			);
+			path = "Order History";
+			sourceTree = "<group>";
+		};
+		B5DCCB212C7F5D6500C730F3 /* Console */ = {
+			isa = PBXGroup;
+			children = (
+				B5DCCB222C7F5D7D00C730F3 /* ConsoleViewController.swift */,
+			);
+			path = Console;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +353,10 @@
 			dependencies = (
 			);
 			name = StripeReaderTest;
+			packageProductDependencies = (
+				B5DCCA8F2C6E492B00C730F3 /* StripeTerminal */,
+				B5DCCAD82C6E507300C730F3 /* SnapKit */,
+			);
 			productName = StripeReaderTest;
 			productReference = B5DCCA772C6E43CE00C730F3 /* StripeReaderTest.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +385,10 @@
 				Base,
 			);
 			mainGroup = B5DCCA6E2C6E43CE00C730F3;
+			packageReferences = (
+				B5DCCA8E2C6E492B00C730F3 /* XCRemoteSwiftPackageReference "stripe-terminal-ios" */,
+				B5DCCAD72C6E507300C730F3 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = B5DCCA782C6E43CE00C730F3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +405,6 @@
 			files = (
 				B5DCCA842C6E43CF00C730F3 /* Assets.xcassets in Resources */,
 				B5DCCA872C6E43CF00C730F3 /* Base in Resources */,
-				B5DCCA822C6E43CE00C730F3 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +415,70 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5DCCA7F2C6E43CE00C730F3 /* ViewController.swift in Sources */,
+				B5DCCAA32C6E4AE000C730F3 /* APIManager.swift in Sources */,
+				B5DCCB142C7E0D6000C730F3 /* OrderHistoryController.swift in Sources */,
+				B5DCCA9B2C6E4A4200C730F3 /* LoginViewController.swift in Sources */,
+				B5DCCA7F2C6E43CE00C730F3 /* FeedViewController.swift in Sources */,
+				B5DCCADD2C6E545800C730F3 /* MenuViewController.swift in Sources */,
+				B5DCCAE02C738AF900C730F3 /* FeedCoordinator.swift in Sources */,
+				B5DCCAE62C73ACBF00C730F3 /* SectionTitle.swift in Sources */,
+				B5DCCB1C2C7E18FA00C730F3 /* Date+.swift in Sources */,
+				B5DCCAF72C74D12B00C730F3 /* StripeUpdateView.swift in Sources */,
+				B5DCCAE82C73AD4200C730F3 /* UILabel.swift in Sources */,
+				B5DCCAF92C74D19800C730F3 /* UIApplication.swift in Sources */,
+				B5DCCAE42C73A64400C730F3 /* ReaderViewController.swift in Sources */,
+				B5DCCAF12C74CC8A00C730F3 /* StripeAPIClient.swift in Sources */,
+				B5DCCAA52C6E4B3300C730F3 /* Logger.swift in Sources */,
+				B5DCCAC02C6E4D0500C730F3 /* SectionView.swift in Sources */,
+				B5DCCB012C74E23B00C730F3 /* StripePaymentController.swift in Sources */,
+				B5DCCAC22C6E4D6000C730F3 /* BaseViewController.swift in Sources */,
+				B5DCCAD12C6E4F0A00C730F3 /* TipsRequest.swift in Sources */,
+				B5DCCB032C74E2AF00C730F3 /* SecretResponse.swift in Sources */,
+				B5DCCB0F2C7CF95F00C730F3 /* ReaderConnectionView.swift in Sources */,
+				B5DCCAA92C6E4BB900C730F3 /* Restaurnat.swift in Sources */,
+				B5DCCAA72C6E4B3A00C730F3 /* LocalStorage.swift in Sources */,
+				B5DCCAAB2C6E4BC100C730F3 /* Customer.swift in Sources */,
+				B5DCCB1E2C7E1D2C00C730F3 /* FoodSection.swift in Sources */,
+				B5DCCB0B2C7CF92400C730F3 /* ReaderFailedView.swift in Sources */,
+				B5DCCAFF2C74D2F000C730F3 /* StripeConnectionController.swift in Sources */,
+				B5DCCAB32C6E4BF400C730F3 /* OrderResponse.swift in Sources */,
 				B5DCCA7B2C6E43CE00C730F3 /* AppDelegate.swift in Sources */,
+				B5DCCAC72C6E4E1B00C730F3 /* Constants.swift in Sources */,
+				B5DCCAFB2C74D23700C730F3 /* TappableClippedView.swift in Sources */,
 				B5DCCA7D2C6E43CE00C730F3 /* SceneDelegate.swift in Sources */,
+				B5DCCAB72C6E4C0600C730F3 /* MenuResponse.swift in Sources */,
+				B5DCCAEE2C74C2FB00C730F3 /* StripeManager.swift in Sources */,
+				B5DCCACB2C6E4E3200C730F3 /* UIViewController+Ext.swift in Sources */,
+				B5DCCB1A2C7E187300C730F3 /* RefundItem.swift in Sources */,
+				B5DCCAEC2C73B54D00C730F3 /* UIButton+.swift in Sources */,
+				B5DCCAC92C6E4E1B00C730F3 /* OrderRequest.swift in Sources */,
+				B5DCCABA2C6E4C4E00C730F3 /* UIStackView+Ext.swift in Sources */,
+				B5DCCAB52C6E4BFA00C730F3 /* VoidResponse.swift in Sources */,
+				B5DCCAFD2C74D26700C730F3 /* UIView+.swift in Sources */,
+				B5DCCACD2C6E4ED100C730F3 /* String+Ext.swift in Sources */,
+				B5DCCACF2C6E4EF300C730F3 /* Collection+Ext.swift in Sources */,
+				B5DCCAC82C6E4E1B00C730F3 /* Globals.swift in Sources */,
+				B5DCCAAF2C6E4BE500C730F3 /* LoginResponse.swift in Sources */,
+				B5DCCAF52C74CFAC00C730F3 /* StripeBluetoothController.swift in Sources */,
+				B5DCCB0D2C7CF94300C730F3 /* ReaderSuccessView.swift in Sources */,
+				B5DCCB112C7CF97A00C730F3 /* ReaderDiscoveryView.swift in Sources */,
+				B5DCCB092C7CEFDE00C730F3 /* TipRecommendations.swift in Sources */,
+				B5DCCB232C7F5D7D00C730F3 /* ConsoleViewController.swift in Sources */,
+				B5DCCABC2C6E4C5600C730F3 /* NSNumberFormatter.swift in Sources */,
+				B5DCCAF32C74CD8500C730F3 /* StripeDiscoveryController.swift in Sources */,
+				B5DCCAEA2C73AE1D00C730F3 /* CustomButton.swift in Sources */,
+				B5DCCAB12C6E4BED00C730F3 /* AuthResponse.swift in Sources */,
+				B5DCCABE2C6E4C5E00C730F3 /* Codable+Ext.swift in Sources */,
+				B5DCCB162C7E182400C730F3 /* OrderItem.swift in Sources */,
+				B5DCCB182C7E184900C730F3 /* PaymentMethod.swift in Sources */,
+				B5DCCAAD2C6E4BCB00C730F3 /* MenuItem.swift in Sources */,
+				B5DCCB052C767B6800C730F3 /* PaymentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B5DCCA802C6E43CE00C730F3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B5DCCA812C6E43CE00C730F3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B5DCCA852C6E43CF00C730F3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -291,13 +615,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = PGU2Q9LCKF;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = StripeReaderTest/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -319,13 +644,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = PGU2Q9LCKF;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = StripeReaderTest/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -363,6 +689,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B5DCCA8E2C6E492B00C730F3 /* XCRemoteSwiftPackageReference "stripe-terminal-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stripe/stripe-terminal-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.8.3;
+			};
+		};
+		B5DCCAD72C6E507300C730F3 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B5DCCA8F2C6E492B00C730F3 /* StripeTerminal */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B5DCCA8E2C6E492B00C730F3 /* XCRemoteSwiftPackageReference "stripe-terminal-ios" */;
+			productName = StripeTerminal;
+		};
+		B5DCCAD82C6E507300C730F3 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B5DCCAD72C6E507300C730F3 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B5DCCA6F2C6E43CE00C730F3 /* Project object */;
 }

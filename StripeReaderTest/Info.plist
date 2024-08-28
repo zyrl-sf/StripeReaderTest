@@ -15,11 +15,30 @@
 					<string>Default Configuration</string>
 					<key>UISceneDelegateClassName</key>
 					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
-					<key>UISceneStoryboardFile</key>
-					<string>Main</string>
 				</dict>
 			</array>
 		</dict>
 	</dict>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
+	<key>LSMinimumSystemVersion</key>
+	<string>13.0.0</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsLocalNetworking</key>
+		<true/>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>bluetooth-central</string>
+	</array>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>This application integrates with Stripe for card processing. To protect buyers and sellers, Stripe requires your location to process payments.</string>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>This application integrates with Stripe for card processing. Stripe uses Bluetooth to connect your device to compatible hardware.</string>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>This application integrates with Stripe for card processing. Stripe uses Bluetooth to connect your device to compatible hardware.</string>
 </dict>
 </plist>

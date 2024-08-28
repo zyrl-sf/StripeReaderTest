@@ -1,0 +1,24 @@
+{
+  "originHash" : "5fe99df81bed0aef911ca6abbc94227cbeb7d13facc154e743b7220fb79de4b3",
+  "pins" : [
+    {
+      "identity" : "snapkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SnapKit/SnapKit",
+      "state" : {
+        "revision" : "2842e6e84e82eb9a8dac0100ca90d9444b0307f4",
+        "version" : "5.7.1"
+      }
+    },
+    {
+      "identity" : "stripe-terminal-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/stripe/stripe-terminal-ios",
+      "state" : {
+        "revision" : "d3948eaddf4306461d144b0d8f0adfb09217e74e",
+        "version" : "3.8.3"
+      }
+    }
+  ],
+  "version" : 3
+}
