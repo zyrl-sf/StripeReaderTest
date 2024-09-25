@@ -20,7 +20,8 @@ class FeedCoordinator {
     } (StripeBluetoothController())
     
     private lazy var stripeManager = StripeManager(connectionDelegate: nil,
-                                                   bluetoothDelegate: readerBluetoothController)
+                                                   bluetoothDelegate: readerBluetoothController, 
+                                                   usbReaderDelegate: readerBluetoothController)
     
     lazy var tabbarController: UITabBarController = {
         $0.viewControllers = [loginNavigation, historyNavigation, console]
@@ -83,6 +84,9 @@ class FeedCoordinator {
         let vc = PaymentViewController(orderRequest: orderRequest, orderResponse: orderResponse)
         vc.nextHandler = { [weak self] in
             self?.menu?.reset()
+        }
+        vc.showAlert = { [weak self] text in
+            self?.menu?.showAlert(message: text)
         }
         target?.present(vc, animated: true)
         payment = vc

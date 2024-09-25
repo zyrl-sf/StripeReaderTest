@@ -6,8 +6,11 @@
 //
 
 import UIKit
+import StripeTerminal
 
 class PaymentViewController: BaseViewController {
+    
+    var showAlert: ((String?) -> Void)?
     
     private var container: UIStackView = {
         $0.axis = .vertical
@@ -36,6 +39,7 @@ class PaymentViewController: BaseViewController {
     }(SuccessView())
     
     private let paymentController = StripePaymentController()
+    private var cancellable: Cancelable?
     
     init(orderRequest: OrderRequest?, orderResponse: OrderResponse?) {
         super.init()
@@ -61,6 +65,8 @@ class PaymentViewController: BaseViewController {
                 DispatchQueue.main.async {
                     self?.statusLabel.text = text
                 }
+            }, cancel: { [weak self] cancellable in
+                self?.cancellable = cancellable
             }, updatedTotal: { [weak self] totalString in
                 DispatchQueue.main.async {
                     self?.priceLabel.text = totalString
@@ -72,9 +78,11 @@ class PaymentViewController: BaseViewController {
                         self?.successView.update(order: order)
                         self?.successView.isHidden = false
                     case .failure(let error):
-                        self?.statusLabel.textColor = .systemRed
-                        self?.statusLabel.text = error.localizedDescription
-                        self?.showAlert(message: error.localizedDescription)
+                        if (error as NSError).code != 2020 {
+                            self?.statusLabel.textColor = .systemRed
+                            self?.statusLabel.text = error.localizedDescription
+                            self?.showAlert(message: error.localizedDescription)
+                        }
                     }
                 }
             })
@@ -86,6 +94,14 @@ class PaymentViewController: BaseViewController {
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
+        if cancellable?.completed == false {
+            cancellable?.cancel({ error in
+//                if let error = error {
+//                    let text = "Cancelling payment failed" + error.localizedDescription
+//                    self?.showAlert?(text)
+//                }
+            })
+        }
         self.nextHandler?()
     }
     

@@ -51,12 +51,15 @@ enum Environment: String, CaseIterable {
 enum StripeReaderType: String {
     case internet = "Internet"
     case bluetooth = "Bluetooth"
+    case usb = "USB"
     
     mutating func toggle() {
         switch self {
             case .internet:
                 self = .bluetooth
             case .bluetooth:
+                self = .usb
+            case .usb:
                 self = .internet
         }
     }
@@ -65,7 +68,7 @@ enum StripeReaderType: String {
         switch self {
         case .internet:
             return UIImage(named: "int_reader")
-        case .bluetooth:
+        case .bluetooth, .usb:
             return UIImage(named: "bt_reader")
         }
     }

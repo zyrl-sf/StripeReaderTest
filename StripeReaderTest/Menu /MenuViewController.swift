@@ -46,11 +46,21 @@ class MenuViewController: BaseViewController {
         title = "Menu"
         
         view.addSubview(container)
-        container.snp.makeConstraints({ 
-            $0.top.equalTo(view.snp.topMargin)
-            $0.left.right.equalToSuperview()
-            $0.bottom.equalTo(view.snp.bottomMargin)
-        })
+        
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            container.snp.makeConstraints({
+                $0.top.equalTo(view.snp.topMargin)
+                $0.centerX.equalToSuperview()
+                $0.width.equalTo(UIScreen.main.bounds.width/2)
+                $0.bottom.equalTo(view.snp.bottomMargin)
+            })
+        } else {
+            container.snp.makeConstraints({
+                $0.top.equalTo(view.snp.topMargin)
+                $0.left.right.equalToSuperview()
+                $0.bottom.equalTo(view.snp.bottomMargin)
+            })
+        }
         
         container.addArrangedSubviews([summaryView, tableView])
         

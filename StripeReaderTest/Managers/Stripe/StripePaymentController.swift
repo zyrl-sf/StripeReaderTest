@@ -15,6 +15,7 @@ class StripePaymentController: NSObject {
                      request: OrderRequest?,
                      isLoading: ((Bool) -> Void)?,
                      status: ((String) -> Void)?,
+                     cancel: ((Cancelable?) -> Void)?,
                      updatedTotal: ((String?) -> Void)?,
                      completion: ((Result<Order?, Error>) -> Void)? ) {
         
@@ -25,6 +26,7 @@ class StripePaymentController: NSObject {
                                           sourceView: sourceView,
                                           request: request,
                                           status: status,
+                                          cancel: cancel,
                                           updatedTotal: updatedTotal)
                 isLoading?(false)
                 completion?(.success(order))
@@ -39,6 +41,7 @@ class StripePaymentController: NSObject {
                              sourceView: UIView,
                              request: OrderRequest?,
                              status: ((String) -> Void)?,
+                             cancel: ((Cancelable?) -> Void)?,
                              updatedTotal: ((String?) -> Void)?) async throws -> Order? {
         
         guard let request = request else { return nil }
@@ -56,7 +59,7 @@ class StripePaymentController: NSObject {
         var intent = try await Terminal.shared.retrievePaymentIntent(clientSecret: secret)
         
         status?("Collecting payment method...")
-        intent = try await collectPaymentMethod(intent: intent)
+        intent = try await collectPaymentMethod(intent: intent, cancel: cancel)
         
         if LocalStorage.readerType == .bluetooth {
             
@@ -96,18 +99,20 @@ class StripePaymentController: NSObject {
         return order
     }
     
-    private func collectPaymentMethod(intent: PaymentIntent) async throws -> PaymentIntent {
+    private func collectPaymentMethod(intent: PaymentIntent,
+                                      cancel: ((Cancelable?) -> Void)?) async throws -> PaymentIntent {
         
 //        let tippingConfig = try TippingConfigurationBuilder()
 //            .setEligibleAmount(1500)
 //            .build()
 //        
-//        let collectConfig = try CollectConfigurationBuilder()
-//            .setTippingConfiguration(tippingConfig)
+      //  let collectConfig = try CollectConfigurationBuilder()
+        //.setTippingConfiguration(tippingConfig)
+//            .setEnableCustomerCancellation(true)
 //            .build()
         
         return try await withCheckedThrowingContinuation { continuation in
-            Terminal.shared.collectPaymentMethod(
+            let cancellable = Terminal.shared.collectPaymentMethod(
                 intent
                 //collectConfig: collectConfig
             ) { collectResult, collectError in
@@ -122,6 +127,7 @@ class StripePaymentController: NSObject {
                     // ... Confirm the payment
                 }
             }
+            cancel?(cancellable)
         }
     }
     

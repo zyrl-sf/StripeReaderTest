@@ -81,10 +81,18 @@ class LoginViewController: BaseViewController {
     func configViews() {
         
         view.addSubview(mainContainer)
-        mainContainer.snp.makeConstraints({
-            $0.centerY.equalToSuperview()
-            $0.left.right.equalToSuperview().inset(20)
-        })
+        
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            mainContainer.snp.makeConstraints({
+                $0.center.equalToSuperview()
+                $0.width.equalTo(UIScreen.main.bounds.width/2)
+            })
+        } else {
+            mainContainer.snp.makeConstraints({
+                $0.centerY.equalToSuperview()
+                $0.left.right.equalToSuperview().inset(20)
+            })
+        }
         
         mainContainer.addArrangedSubviews([credentialsSection,
                                            customerSection,
@@ -158,7 +166,7 @@ class LoginViewController: BaseViewController {
         alert.addAction(cancel)
         
         alert.popoverPresentationController?.sourceView = sourceView
-        alert.popoverPresentationController?.sourceRect = sourceView.frame
+        alert.popoverPresentationController?.sourceRect = sourceView.bounds
         
         self.present(alert, animated: true, completion: nil)
         
@@ -224,7 +232,7 @@ class LoginViewController: BaseViewController {
         alert.addAction(cancel)
         
         alert.popoverPresentationController?.sourceView = sourceView
-        alert.popoverPresentationController?.sourceRect = sourceView.frame
+        alert.popoverPresentationController?.sourceRect = sourceView.bounds
         
         self.present(alert, animated: true, completion: nil)
         

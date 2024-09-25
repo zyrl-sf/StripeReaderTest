@@ -27,6 +27,8 @@ class StripeDiscoveryController: NSObject, DiscoveryDelegate {
             discoverBluetoothReaders()
         case .internet:
             discoverInternetReaders()
+        case .usb:
+            discoverUSBReaders()
         }
     }
     
@@ -34,6 +36,24 @@ class StripeDiscoveryController: NSObject, DiscoveryDelegate {
     func discoverBluetoothReaders() {
         do {
             let config = try BluetoothScanDiscoveryConfigurationBuilder()
+                .setSimulated(LocalStorage.isStripeSimulatorEnabled)
+                .build()
+            self.discoverCancelable = Terminal.shared.discoverReaders(config, delegate: self) { [weak self] error in
+                if let error = error {
+                    print("discoverReaders failed: \(error)")
+                    self?.delegate?.failed(error: error)
+                } else {
+                    print("discoverReaders succeeded")
+                }
+            }
+        } catch {
+            delegate?.failed(error: error)
+        }
+    }
+    
+    func discoverUSBReaders() {
+        do {
+            let config = try UsbDiscoveryConfigurationBuilder()
                 .setSimulated(LocalStorage.isStripeSimulatorEnabled)
                 .build()
             self.discoverCancelable = Terminal.shared.discoverReaders(config, delegate: self) { [weak self] error in

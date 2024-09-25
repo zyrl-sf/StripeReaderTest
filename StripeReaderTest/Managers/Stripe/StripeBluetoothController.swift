@@ -17,7 +17,7 @@ class StripeBluetoothController: NSObject {
     
 }
 
-extension StripeBluetoothController: BluetoothReaderDelegate {
+extension StripeBluetoothController: BluetoothReaderDelegate, UsbReaderDelegate {
     
     func reader(_ reader: Reader, didReportAvailableUpdate update: ReaderSoftwareUpdate) {
         

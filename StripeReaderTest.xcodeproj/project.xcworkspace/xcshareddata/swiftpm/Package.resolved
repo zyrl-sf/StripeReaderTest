@@ -1,5 +1,5 @@
 {
-  "originHash" : "5fe99df81bed0aef911ca6abbc94227cbeb7d13facc154e743b7220fb79de4b3",
+  "originHash" : "bdea1b93842728f372079d674a6c6624b2f0ffafa59211f64db648d6b839f4f3",
   "pins" : [
     {
       "identity" : "snapkit",
@@ -15,8 +15,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/stripe/stripe-terminal-ios",
       "state" : {
-        "revision" : "d3948eaddf4306461d144b0d8f0adfb09217e74e",
-        "version" : "3.8.3"
+        "revision" : "3baa8280aeb36cd149f33b7f83bdbad8d33b46c3",
+        "version" : "3.9.1"
       }
     }
   ],

@@ -19,18 +19,25 @@ protocol StripeManagerDelegate: AnyObject {
 class StripeManager: NSObject {
     
     private lazy var discovery = StripeDiscoveryController(delegate: self)
-    private lazy var connection = StripeReaderConnectionController(delegate: self, bluetoothDelegate: bluetoothDelegate)
+    private lazy var connection = StripeReaderConnectionController(delegate: self, 
+                                                                   bluetoothDelegate: bluetoothDelegate,
+                                                                   usbReaderDelegate: usbReaderDelegate)
     
     weak var connectionDelegate: StripeManagerDelegate?
     private weak var bluetoothDelegate: BluetoothReaderDelegate?
+    private weak var usbReaderDelegate: UsbReaderDelegate?
     
     var isReaderConnected: Bool {
         Terminal.shared.connectedReader != nil
     }
     
-    init(connectionDelegate: StripeManagerDelegate?, bluetoothDelegate: BluetoothReaderDelegate?) {
+    init(connectionDelegate: StripeManagerDelegate?, 
+         bluetoothDelegate: BluetoothReaderDelegate?,
+         usbReaderDelegate: UsbReaderDelegate?) {
+        
         self.connectionDelegate = connectionDelegate
         self.bluetoothDelegate = bluetoothDelegate
+        self.usbReaderDelegate = usbReaderDelegate
         super.init()
     }
     
