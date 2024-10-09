@@ -167,4 +167,21 @@ class StripePaymentController: NSObject {
         
     }
     
+    func readGiftCard() async throws -> String {
+        let config = try CollectDataConfigurationBuilder().setCollectDataType(.magstripe).build()
+        
+        return try await withCheckedThrowingContinuation { continuation in
+            let cancelable = Terminal.shared.collectData(config) { collectedData, collectError in
+                if let error = collectError {
+                    // Handle read errors
+                    print("Collect data failed: \(error)")
+                    continuation.resume(with: .failure(error))
+                } else if let data = collectedData, let stripeId = data.stripeId {
+                    print("Received collected data token: \(stripeId)")
+                    continuation.resume(with: .success(stripeId))
+                }
+            }
+        }
+    }
+        
 }

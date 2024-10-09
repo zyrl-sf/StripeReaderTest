@@ -3,20 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B577E1D92C9C9A500060E160 /* StripeTerminal in Frameworks */ = {isa = PBXBuildFile; productRef = B577E1D82C9C9A500060E160 /* StripeTerminal */; };
-		B5B87C602CA47CCE00C9FB0F /* DriverKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5B87C5F2CA47CCE00C9FB0F /* DriverKit.framework */; };
-		B5B87C692CA47CCE00C9FB0F /* StripeReaderTest.StripeReaderTest.USBDriver.dext in Embed System Extensions */ = {isa = PBXBuildFile; fileRef = B5B87C5E2CA47CCE00C9FB0F /* StripeReaderTest.StripeReaderTest.USBDriver.dext */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		B5B87C6E2CA47D6D00C9FB0F /* USBDriverKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5B87C6D2CA47D6D00C9FB0F /* USBDriverKit.framework */; };
-		B5B87C772CA47E5F00C9FB0F /* BBUSBDriverDetectionUserClient.iig in Sources */ = {isa = PBXBuildFile; fileRef = B5B87C722CA47E5F00C9FB0F /* BBUSBDriverDetectionUserClient.iig */; };
-		B5B87C782CA47E5F00C9FB0F /* libBBUSBDriverCore-1.0.2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5B87C732CA47E5F00C9FB0F /* libBBUSBDriverCore-1.0.2.a */; };
-		B5B87C792CA47E5F00C9FB0F /* BBUSBDriverDataCommUserClient.iig in Sources */ = {isa = PBXBuildFile; fileRef = B5B87C742CA47E5F00C9FB0F /* BBUSBDriverDataCommUserClient.iig */; };
-		B5B87C7A2CA47E5F00C9FB0F /* BBUSBDriverDataStruct.h in Headers */ = {isa = PBXBuildFile; fileRef = B5B87C752CA47E5F00C9FB0F /* BBUSBDriverDataStruct.h */; };
-		B5B87C7B2CA47E5F00C9FB0F /* BBUSBDriverHost.iig in Sources */ = {isa = PBXBuildFile; fileRef = B5B87C762CA47E5F00C9FB0F /* BBUSBDriverHost.iig */; };
+		B572B1452CB6FF1A0044B839 /* USBDriverKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5B87C6D2CA47D6D00C9FB0F /* USBDriverKit.framework */; };
 		B5B87C7D2CA47F2300C9FB0F /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5B87C7C2CA47F2300C9FB0F /* IOKit.framework */; };
+		B5BF3BE42CB6F6660025DE3C /* DriverKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5BF3BE32CB6F6660025DE3C /* DriverKit.framework */; };
+		B5BF3BED2CB6F6660025DE3C /* StripeReaderTest.StripeReaderTest.StripeDriver.dext in Embed System Extensions */ = {isa = PBXBuildFile; fileRef = B5BF3BE22CB6F6660025DE3C /* StripeReaderTest.StripeReaderTest.StripeDriver.dext */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B5BF3C002CB6F98B0025DE3C /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5B87C7C2CA47F2300C9FB0F /* IOKit.framework */; };
+		B5D86C9E2CA7371B00526AF0 /* StripeTerminal in Frameworks */ = {isa = PBXBuildFile; productRef = B5D86C9D2CA7371B00526AF0 /* StripeTerminal */; };
+		B5D86CA12CA738F100526AF0 /* GiftCardScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D86CA02CA738E600526AF0 /* GiftCardScanner.swift */; };
 		B5DCCA7B2C6E43CE00C730F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCCA7A2C6E43CE00C730F3 /* AppDelegate.swift */; };
 		B5DCCA7D2C6E43CE00C730F3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCCA7C2C6E43CE00C730F3 /* SceneDelegate.swift */; };
 		B5DCCA7F2C6E43CE00C730F3 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCCA7E2C6E43CE00C730F3 /* FeedViewController.swift */; };
@@ -81,12 +78,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B5B87C672CA47CCE00C9FB0F /* PBXContainerItemProxy */ = {
+		B5BF3BEB2CB6F6660025DE3C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B5DCCA6F2C6E43CE00C730F3 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B5B87C5D2CA47CCE00C9FB0F;
-			remoteInfo = USBDriver;
+			remoteGlobalIDString = B5BF3BE12CB6F6660025DE3C;
+			remoteInfo = StripeDriver;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -97,7 +94,7 @@
 			dstPath = "$(SYSTEM_EXTENSIONS_FOLDER_PATH)";
 			dstSubfolderSpec = 16;
 			files = (
-				B5B87C692CA47CCE00C9FB0F /* StripeReaderTest.StripeReaderTest.USBDriver.dext in Embed System Extensions */,
+				B5BF3BED2CB6F6660025DE3C /* StripeReaderTest.StripeReaderTest.StripeDriver.dext in Embed System Extensions */,
 			);
 			name = "Embed System Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -106,17 +103,11 @@
 
 /* Begin PBXFileReference section */
 		B5830E122C9B5117004DD2EB /* StripeReaderTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StripeReaderTest.entitlements; sourceTree = "<group>"; };
-		B5B87C5E2CA47CCE00C9FB0F /* StripeReaderTest.StripeReaderTest.USBDriver.dext */ = {isa = PBXFileReference; explicitFileType = "wrapper.driver-extension"; includeInIndex = 0; path = StripeReaderTest.StripeReaderTest.USBDriver.dext; sourceTree = BUILT_PRODUCTS_DIR; };
-		B5B87C5F2CA47CCE00C9FB0F /* DriverKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DriverKit.framework; path = Library/Frameworks/DriverKit.framework; sourceTree = DEVELOPER_DIR; };
-		B5B87C662CA47CCE00C9FB0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5B87C6D2CA47D6D00C9FB0F /* USBDriverKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = USBDriverKit.framework; path = ../../../../System/DriverKit/System/Library/Frameworks/USBDriverKit.framework; sourceTree = "<group>"; };
-		B5B87C712CA47DCD00C9FB0F /* USBDriver.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = USBDriver.entitlements; sourceTree = "<group>"; };
-		B5B87C722CA47E5F00C9FB0F /* BBUSBDriverDetectionUserClient.iig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.iig; path = BBUSBDriverDetectionUserClient.iig; sourceTree = "<group>"; };
-		B5B87C732CA47E5F00C9FB0F /* libBBUSBDriverCore-1.0.2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libBBUSBDriverCore-1.0.2.a"; sourceTree = "<group>"; };
-		B5B87C742CA47E5F00C9FB0F /* BBUSBDriverDataCommUserClient.iig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.iig; path = BBUSBDriverDataCommUserClient.iig; sourceTree = "<group>"; };
-		B5B87C752CA47E5F00C9FB0F /* BBUSBDriverDataStruct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBUSBDriverDataStruct.h; sourceTree = "<group>"; };
-		B5B87C762CA47E5F00C9FB0F /* BBUSBDriverHost.iig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.iig; path = BBUSBDriverHost.iig; sourceTree = "<group>"; };
 		B5B87C7C2CA47F2300C9FB0F /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		B5BF3BE22CB6F6660025DE3C /* StripeReaderTest.StripeReaderTest.StripeDriver.dext */ = {isa = PBXFileReference; explicitFileType = "wrapper.driver-extension"; includeInIndex = 0; path = StripeReaderTest.StripeReaderTest.StripeDriver.dext; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5BF3BE32CB6F6660025DE3C /* DriverKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DriverKit.framework; path = Library/Frameworks/DriverKit.framework; sourceTree = DEVELOPER_DIR; };
+		B5D86CA02CA738E600526AF0 /* GiftCardScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftCardScanner.swift; sourceTree = "<group>"; };
 		B5DCCA772C6E43CE00C730F3 /* StripeReaderTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StripeReaderTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5DCCA7A2C6E43CE00C730F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5DCCA7C2C6E43CE00C730F3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -181,14 +172,27 @@
 		B5DCCB222C7F5D7D00C730F3 /* ConsoleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		B5BF3BF02CB6F6660025DE3C /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = B5BF3BE12CB6F6660025DE3C /* StripeDriver */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		B5BF3BE52CB6F6660025DE3C /* StripeDriver */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (B5BF3BF02CB6F6660025DE3C /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = StripeDriver; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
-		B5B87C5B2CA47CCE00C9FB0F /* Frameworks */ = {
+		B5BF3BDF2CB6F6660025DE3C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5B87C782CA47E5F00C9FB0F /* libBBUSBDriverCore-1.0.2.a in Frameworks */,
-				B5B87C6E2CA47D6D00C9FB0F /* USBDriverKit.framework in Frameworks */,
-				B5B87C602CA47CCE00C9FB0F /* DriverKit.framework in Frameworks */,
+				B572B1452CB6FF1A0044B839 /* USBDriverKit.framework in Frameworks */,
+				B5BF3BE42CB6F6660025DE3C /* DriverKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,8 +201,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5DCCAD92C6E507300C730F3 /* SnapKit in Frameworks */,
-				B577E1D92C9C9A500060E160 /* StripeTerminal in Frameworks */,
 				B5B87C7D2CA47F2300C9FB0F /* IOKit.framework in Frameworks */,
+				B5D86C9E2CA7371B00526AF0 /* StripeTerminal in Frameworks */,
+				B5BF3C002CB6F98B0025DE3C /* IOKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,30 +215,24 @@
 			children = (
 				B5B87C7C2CA47F2300C9FB0F /* IOKit.framework */,
 				B5B87C6D2CA47D6D00C9FB0F /* USBDriverKit.framework */,
-				B5B87C5F2CA47CCE00C9FB0F /* DriverKit.framework */,
+				B5BF3BE32CB6F6660025DE3C /* DriverKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		B5B87C612CA47CCE00C9FB0F /* USBDriver */ = {
+		B5D86C9F2CA738B300526AF0 /* GiftCardScanner */ = {
 			isa = PBXGroup;
 			children = (
-				B5B87C742CA47E5F00C9FB0F /* BBUSBDriverDataCommUserClient.iig */,
-				B5B87C752CA47E5F00C9FB0F /* BBUSBDriverDataStruct.h */,
-				B5B87C722CA47E5F00C9FB0F /* BBUSBDriverDetectionUserClient.iig */,
-				B5B87C762CA47E5F00C9FB0F /* BBUSBDriverHost.iig */,
-				B5B87C732CA47E5F00C9FB0F /* libBBUSBDriverCore-1.0.2.a */,
-				B5B87C712CA47DCD00C9FB0F /* USBDriver.entitlements */,
-				B5B87C662CA47CCE00C9FB0F /* Info.plist */,
+				B5D86CA02CA738E600526AF0 /* GiftCardScanner.swift */,
 			);
-			path = USBDriver;
+			path = GiftCardScanner;
 			sourceTree = "<group>";
 		};
 		B5DCCA6E2C6E43CE00C730F3 = {
 			isa = PBXGroup;
 			children = (
 				B5DCCA792C6E43CE00C730F3 /* StripeReaderTest */,
-				B5B87C612CA47CCE00C9FB0F /* USBDriver */,
+				B5BF3BE52CB6F6660025DE3C /* StripeDriver */,
 				B5830DEB2C9B4686004DD2EB /* Frameworks */,
 				B5DCCA782C6E43CE00C730F3 /* Products */,
 			);
@@ -243,7 +242,7 @@
 			isa = PBXGroup;
 			children = (
 				B5DCCA772C6E43CE00C730F3 /* StripeReaderTest.app */,
-				B5B87C5E2CA47CCE00C9FB0F /* StripeReaderTest.StripeReaderTest.USBDriver.dext */,
+				B5BF3BE22CB6F6660025DE3C /* StripeReaderTest.StripeReaderTest.StripeDriver.dext */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -269,6 +268,7 @@
 				B5DCCA922C6E49E000C730F3 /* Menu  */,
 				B5DCCA932C6E49EA00C730F3 /* Payment Flow */,
 				B5DCCB122C7E0D4300C730F3 /* Order History */,
+				B5D86C9F2CA738B300526AF0 /* GiftCardScanner */,
 				B5DCCB212C7F5D6500C730F3 /* Console */,
 			);
 			path = StripeReaderTest;
@@ -424,33 +424,37 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		B5B87C592CA47CCE00C9FB0F /* Headers */ = {
+		B5BF3BDD2CB6F6660025DE3C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5B87C7A2CA47E5F00C9FB0F /* BBUSBDriverDataStruct.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		B5B87C5D2CA47CCE00C9FB0F /* USBDriver */ = {
+		B5BF3BE12CB6F6660025DE3C /* StripeDriver */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B5B87C6A2CA47CCE00C9FB0F /* Build configuration list for PBXNativeTarget "USBDriver" */;
+			buildConfigurationList = B5BF3BF12CB6F6660025DE3C /* Build configuration list for PBXNativeTarget "StripeDriver" */;
 			buildPhases = (
-				B5B87C592CA47CCE00C9FB0F /* Headers */,
-				B5B87C5A2CA47CCE00C9FB0F /* Sources */,
-				B5B87C5B2CA47CCE00C9FB0F /* Frameworks */,
-				B5B87C5C2CA47CCE00C9FB0F /* Resources */,
+				B5BF3BDD2CB6F6660025DE3C /* Headers */,
+				B5BF3BDE2CB6F6660025DE3C /* Sources */,
+				B5BF3BDF2CB6F6660025DE3C /* Frameworks */,
+				B5BF3BE02CB6F6660025DE3C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = USBDriver;
-			productName = USBDriver;
-			productReference = B5B87C5E2CA47CCE00C9FB0F /* StripeReaderTest.StripeReaderTest.USBDriver.dext */;
+			fileSystemSynchronizedGroups = (
+				B5BF3BE52CB6F6660025DE3C /* StripeDriver */,
+			);
+			name = StripeDriver;
+			packageProductDependencies = (
+			);
+			productName = StripeDriver;
+			productReference = B5BF3BE22CB6F6660025DE3C /* StripeReaderTest.StripeReaderTest.StripeDriver.dext */;
 			productType = "com.apple.product-type.driver-extension";
 		};
 		B5DCCA762C6E43CE00C730F3 /* StripeReaderTest */ = {
@@ -465,12 +469,12 @@
 			buildRules = (
 			);
 			dependencies = (
-				B5B87C682CA47CCE00C9FB0F /* PBXTargetDependency */,
+				B5BF3BEC2CB6F6660025DE3C /* PBXTargetDependency */,
 			);
 			name = StripeReaderTest;
 			packageProductDependencies = (
 				B5DCCAD82C6E507300C730F3 /* SnapKit */,
-				B577E1D82C9C9A500060E160 /* StripeTerminal */,
+				B5D86C9D2CA7371B00526AF0 /* StripeTerminal */,
 			);
 			productName = StripeReaderTest;
 			productReference = B5DCCA772C6E43CE00C730F3 /* StripeReaderTest.app */;
@@ -486,8 +490,8 @@
 				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
-					B5B87C5D2CA47CCE00C9FB0F = {
-						CreatedOnToolsVersion = 15.4;
+					B5BF3BE12CB6F6660025DE3C = {
+						CreatedOnToolsVersion = 16.0;
 					};
 					B5DCCA762C6E43CE00C730F3 = {
 						CreatedOnToolsVersion = 15.4;
@@ -505,20 +509,20 @@
 			mainGroup = B5DCCA6E2C6E43CE00C730F3;
 			packageReferences = (
 				B5DCCAD72C6E507300C730F3 /* XCRemoteSwiftPackageReference "SnapKit" */,
-				B577E1D72C9C9A500060E160 /* XCRemoteSwiftPackageReference "stripe-terminal-ios" */,
+				B5D86C9C2CA7371B00526AF0 /* XCRemoteSwiftPackageReference "stripe-terminal-ios" */,
 			);
 			productRefGroup = B5DCCA782C6E43CE00C730F3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				B5DCCA762C6E43CE00C730F3 /* StripeReaderTest */,
-				B5B87C5D2CA47CCE00C9FB0F /* USBDriver */,
+				B5BF3BE12CB6F6660025DE3C /* StripeDriver */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B5B87C5C2CA47CCE00C9FB0F /* Resources */ = {
+		B5BF3BE02CB6F6660025DE3C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -537,13 +541,10 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B5B87C5A2CA47CCE00C9FB0F /* Sources */ = {
+		B5BF3BDE2CB6F6660025DE3C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5B87C792CA47E5F00C9FB0F /* BBUSBDriverDataCommUserClient.iig in Sources */,
-				B5B87C772CA47E5F00C9FB0F /* BBUSBDriverDetectionUserClient.iig in Sources */,
-				B5B87C7B2CA47E5F00C9FB0F /* BBUSBDriverHost.iig in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -609,16 +610,17 @@
 				B5DCCB182C7E184900C730F3 /* PaymentMethod.swift in Sources */,
 				B5DCCAAD2C6E4BCB00C730F3 /* MenuItem.swift in Sources */,
 				B5DCCB052C767B6800C730F3 /* PaymentViewController.swift in Sources */,
+				B5D86CA12CA738F100526AF0 /* GiftCardScanner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		B5B87C682CA47CCE00C9FB0F /* PBXTargetDependency */ = {
+		B5BF3BEC2CB6F6660025DE3C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B5B87C5D2CA47CCE00C9FB0F /* USBDriver */;
-			targetProxy = B5B87C672CA47CCE00C9FB0F /* PBXContainerItemProxy */;
+			target = B5BF3BE12CB6F6660025DE3C /* StripeDriver */;
+			targetProxy = B5BF3BEB2CB6F6660025DE3C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -634,22 +636,22 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		B5B87C6B2CA47CCE00C9FB0F /* Debug */ = {
+		B5BF3BEE2CB6F6660025DE3C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = USBDriver/USBDriver.entitlements;
+				CODE_SIGN_ENTITLEMENTS = StripeDriver/StripeDriver.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PGU2Q9LCKF;
-				DRIVERKIT_DEPLOYMENT_TARGET = 20;
+				DRIVERKIT_DEPLOYMENT_TARGET = 20.0;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = USBDriver/Info.plist;
+				INFOPLIST_FILE = StripeDriver/Info.plist;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/USBDriver",
+					"$(PROJECT_DIR)/StripeDriver",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = StripeReaderTest.StripeReaderTest.USBDriver;
+				PRODUCT_BUNDLE_IDENTIFIER = StripeReaderTest.StripeReaderTest.StripeDriver;
 				PRODUCT_NAME = "$(inherited)";
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = driverkit;
@@ -658,22 +660,22 @@
 			};
 			name = Debug;
 		};
-		B5B87C6C2CA47CCE00C9FB0F /* Release */ = {
+		B5BF3BEF2CB6F6660025DE3C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = USBDriver/USBDriver.entitlements;
+				CODE_SIGN_ENTITLEMENTS = StripeDriver/StripeDriver.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PGU2Q9LCKF;
-				DRIVERKIT_DEPLOYMENT_TARGET = 20;
+				DRIVERKIT_DEPLOYMENT_TARGET = 20.0;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = USBDriver/Info.plist;
+				INFOPLIST_FILE = StripeDriver/Info.plist;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/USBDriver",
+					"$(PROJECT_DIR)/StripeDriver",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = StripeReaderTest.StripeReaderTest.USBDriver;
+				PRODUCT_BUNDLE_IDENTIFIER = StripeReaderTest.StripeReaderTest.StripeDriver;
 				PRODUCT_NAME = "$(inherited)";
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = driverkit;
@@ -808,7 +810,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = StripeReaderTest/StripeReaderTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_TEAM = PGU2Q9LCKF;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"SCP_USB_ENABLED=1",
@@ -842,7 +844,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = StripeReaderTest/StripeReaderTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_TEAM = PGU2Q9LCKF;
 				GCC_PREPROCESSOR_DEFINITIONS = "SCP_USB_ENABLED=1";
 				GENERATE_INFOPLIST_FILE = YES;
@@ -869,11 +871,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B5B87C6A2CA47CCE00C9FB0F /* Build configuration list for PBXNativeTarget "USBDriver" */ = {
+		B5BF3BF12CB6F6660025DE3C /* Build configuration list for PBXNativeTarget "StripeDriver" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B5B87C6B2CA47CCE00C9FB0F /* Debug */,
-				B5B87C6C2CA47CCE00C9FB0F /* Release */,
+				B5BF3BEE2CB6F6660025DE3C /* Debug */,
+				B5BF3BEF2CB6F6660025DE3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -899,7 +901,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		B577E1D72C9C9A500060E160 /* XCRemoteSwiftPackageReference "stripe-terminal-ios" */ = {
+		B5D86C9C2CA7371B00526AF0 /* XCRemoteSwiftPackageReference "stripe-terminal-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/stripe/stripe-terminal-ios";
 			requirement = {
@@ -918,9 +920,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		B577E1D82C9C9A500060E160 /* StripeTerminal */ = {
+		B5D86C9D2CA7371B00526AF0 /* StripeTerminal */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = B577E1D72C9C9A500060E160 /* XCRemoteSwiftPackageReference "stripe-terminal-ios" */;
+			package = B5D86C9C2CA7371B00526AF0 /* XCRemoteSwiftPackageReference "stripe-terminal-ios" */;
 			productName = StripeTerminal;
 		};
 		B5DCCAD82C6E507300C730F3 /* SnapKit */ = {

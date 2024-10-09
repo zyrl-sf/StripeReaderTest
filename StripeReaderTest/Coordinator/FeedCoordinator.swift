@@ -24,7 +24,7 @@ class FeedCoordinator {
                                                    usbReaderDelegate: readerBluetoothController)
     
     lazy var tabbarController: UITabBarController = {
-        $0.viewControllers = [loginNavigation, historyNavigation, console]
+        $0.viewControllers = [loginNavigation, historyNavigation, scanner, console]
         return $0
     }(UITabBarController())
     
@@ -47,8 +47,13 @@ class FeedCoordinator {
         return $0
     }(OrderHistoryController())
     
+    lazy var scanner: GiftCardScanner = {
+        $0.tabBarItem = UITabBarItem(title: "Scanner", image: UIImage(systemName: "barcode.viewfinder"), tag: 2)
+        return $0
+    }(GiftCardScanner())
+    
     lazy var console: ConsoleViewController = {
-        $0.tabBarItem = UITabBarItem(title: "Console", image: UIImage(systemName: "apple.terminal"), tag: 2)
+        $0.tabBarItem = UITabBarItem(title: "Console", image: UIImage(systemName: "apple.terminal"), tag: 3)
         FeedCoordinator.currentConsole = $0
         return $0
     }(ConsoleViewController())
