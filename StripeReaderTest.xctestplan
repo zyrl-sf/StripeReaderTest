@@ -1,0 +1,37 @@
+{
+  "configurations" : [
+    {
+      "id" : "5EAC8C8B-5EB1-4923-972E-90CA4F83D97B",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false,
+    "environmentVariableEntries" : [
+      {
+        "key" : "IDEPreferLogStreaming",
+        "value" : "YES"
+      }
+    ],
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:StripeReaderTest.xcodeproj",
+      "identifier" : "B5DCCA762C6E43CE00C730F3",
+      "name" : "StripeReaderTest"
+    }
+  },
+  "testTargets" : [
+    {
+      "enabled" : false,
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:StripeReaderTest.xcodeproj",
+        "identifier" : "B5B87CAA2CA6D03A00C9FB0F",
+        "name" : "SwiftTesting"
+      }
+    }
+  ],
+  "version" : 1
+}

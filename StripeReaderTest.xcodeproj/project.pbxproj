@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B572B1452CB6FF1A0044B839 /* USBDriverKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5B87C6D2CA47D6D00C9FB0F /* USBDriverKit.framework */; };
+		B5B82D3B2CB70A9A0097B07F /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = B5B82D3A2CB70A9A0097B07F /* SnapKit */; };
 		B5B87C7D2CA47F2300C9FB0F /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5B87C7C2CA47F2300C9FB0F /* IOKit.framework */; };
 		B5BF3BE42CB6F6660025DE3C /* DriverKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5BF3BE32CB6F6660025DE3C /* DriverKit.framework */; };
 		B5BF3BED2CB6F6660025DE3C /* StripeReaderTest.StripeReaderTest.StripeDriver.dext in Embed System Extensions */ = {isa = PBXBuildFile; fileRef = B5BF3BE22CB6F6660025DE3C /* StripeReaderTest.StripeReaderTest.StripeDriver.dext */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -43,7 +44,6 @@
 		B5DCCACD2C6E4ED100C730F3 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCCACC2C6E4ED100C730F3 /* String+Ext.swift */; };
 		B5DCCACF2C6E4EF300C730F3 /* Collection+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCCACE2C6E4EF300C730F3 /* Collection+Ext.swift */; };
 		B5DCCAD12C6E4F0A00C730F3 /* TipsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCCAD02C6E4F0A00C730F3 /* TipsRequest.swift */; };
-		B5DCCAD92C6E507300C730F3 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = B5DCCAD82C6E507300C730F3 /* SnapKit */; };
 		B5DCCADD2C6E545800C730F3 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCCADC2C6E545800C730F3 /* MenuViewController.swift */; };
 		B5DCCAE02C738AF900C730F3 /* FeedCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCCADF2C738AF900C730F3 /* FeedCoordinator.swift */; };
 		B5DCCAE42C73A64400C730F3 /* ReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCCAE32C73A64400C730F3 /* ReaderViewController.swift */; };
@@ -103,6 +103,7 @@
 
 /* Begin PBXFileReference section */
 		B5830E122C9B5117004DD2EB /* StripeReaderTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StripeReaderTest.entitlements; sourceTree = "<group>"; };
+		B5B82D3C2CB70B260097B07F /* StripeReaderTest.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = StripeReaderTest.xctestplan; sourceTree = "<group>"; };
 		B5B87C6D2CA47D6D00C9FB0F /* USBDriverKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = USBDriverKit.framework; path = ../../../../System/DriverKit/System/Library/Frameworks/USBDriverKit.framework; sourceTree = "<group>"; };
 		B5B87C7C2CA47F2300C9FB0F /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		B5BF3BE22CB6F6660025DE3C /* StripeReaderTest.StripeReaderTest.StripeDriver.dext */ = {isa = PBXFileReference; explicitFileType = "wrapper.driver-extension"; includeInIndex = 0; path = StripeReaderTest.StripeReaderTest.StripeDriver.dext; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -200,8 +201,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5DCCAD92C6E507300C730F3 /* SnapKit in Frameworks */,
 				B5B87C7D2CA47F2300C9FB0F /* IOKit.framework in Frameworks */,
+				B5B82D3B2CB70A9A0097B07F /* SnapKit in Frameworks */,
 				B5D86C9E2CA7371B00526AF0 /* StripeTerminal in Frameworks */,
 				B5BF3C002CB6F98B0025DE3C /* IOKit.framework in Frameworks */,
 			);
@@ -231,6 +232,7 @@
 		B5DCCA6E2C6E43CE00C730F3 = {
 			isa = PBXGroup;
 			children = (
+				B5B82D3C2CB70B260097B07F /* StripeReaderTest.xctestplan */,
 				B5DCCA792C6E43CE00C730F3 /* StripeReaderTest */,
 				B5BF3BE52CB6F6660025DE3C /* StripeDriver */,
 				B5830DEB2C9B4686004DD2EB /* Frameworks */,
@@ -473,8 +475,8 @@
 			);
 			name = StripeReaderTest;
 			packageProductDependencies = (
-				B5DCCAD82C6E507300C730F3 /* SnapKit */,
 				B5D86C9D2CA7371B00526AF0 /* StripeTerminal */,
+				B5B82D3A2CB70A9A0097B07F /* SnapKit */,
 			);
 			productName = StripeReaderTest;
 			productReference = B5DCCA772C6E43CE00C730F3 /* StripeReaderTest.app */;
@@ -508,8 +510,8 @@
 			);
 			mainGroup = B5DCCA6E2C6E43CE00C730F3;
 			packageReferences = (
-				B5DCCAD72C6E507300C730F3 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				B5D86C9C2CA7371B00526AF0 /* XCRemoteSwiftPackageReference "stripe-terminal-ios" */,
+				B5B82D392CB70A9A0097B07F /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = B5DCCA782C6E43CE00C730F3 /* Products */;
 			projectDirPath = "";
@@ -644,6 +646,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PGU2Q9LCKF;
 				DRIVERKIT_DEPLOYMENT_TARGET = 20.0;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/System/DriverKit/System/Library/Frameworks",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = StripeDriver/Info.plist;
 				LIBRARY_SEARCH_PATHS = (
@@ -668,6 +674,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PGU2Q9LCKF;
 				DRIVERKIT_DEPLOYMENT_TARGET = 20.0;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/System/DriverKit/System/Library/Frameworks",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = StripeDriver/Info.plist;
 				LIBRARY_SEARCH_PATHS = (
@@ -903,6 +913,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		B5B82D392CB70A9A0097B07F /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
 		B5D86C9C2CA7371B00526AF0 /* XCRemoteSwiftPackageReference "stripe-terminal-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/stripe/stripe-terminal-ios";
@@ -911,26 +929,18 @@
 				minimumVersion = 3.9.1;
 			};
 		};
-		B5DCCAD72C6E507300C730F3 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SnapKit/SnapKit";
-			requirement = {
-				kind = upToNextMinorVersion;
-				minimumVersion = 5.7.1;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		B5B82D3A2CB70A9A0097B07F /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B5B82D392CB70A9A0097B07F /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
 		B5D86C9D2CA7371B00526AF0 /* StripeTerminal */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = B5D86C9C2CA7371B00526AF0 /* XCRemoteSwiftPackageReference "stripe-terminal-ios" */;
 			productName = StripeTerminal;
-		};
-		B5DCCAD82C6E507300C730F3 /* SnapKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B5DCCAD72C6E507300C730F3 /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
