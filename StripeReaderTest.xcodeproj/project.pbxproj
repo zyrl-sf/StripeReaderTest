@@ -12,7 +12,6 @@
 		B5B87C7D2CA47F2300C9FB0F /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5B87C7C2CA47F2300C9FB0F /* IOKit.framework */; };
 		B5BF3BE42CB6F6660025DE3C /* DriverKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5BF3BE32CB6F6660025DE3C /* DriverKit.framework */; };
 		B5BF3BED2CB6F6660025DE3C /* StripeReaderTest.StripeReaderTest.StripeDriver.dext in Embed System Extensions */ = {isa = PBXBuildFile; fileRef = B5BF3BE22CB6F6660025DE3C /* StripeReaderTest.StripeReaderTest.StripeDriver.dext */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		B5BF3C002CB6F98B0025DE3C /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5B87C7C2CA47F2300C9FB0F /* IOKit.framework */; };
 		B5D86C9E2CA7371B00526AF0 /* StripeTerminal in Frameworks */ = {isa = PBXBuildFile; productRef = B5D86C9D2CA7371B00526AF0 /* StripeTerminal */; };
 		B5D86CA12CA738F100526AF0 /* GiftCardScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D86CA02CA738E600526AF0 /* GiftCardScanner.swift */; };
 		B5DCCA7B2C6E43CE00C730F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCCA7A2C6E43CE00C730F3 /* AppDelegate.swift */; };
@@ -204,7 +203,6 @@
 				B5B87C7D2CA47F2300C9FB0F /* IOKit.framework in Frameworks */,
 				B5B82D3B2CB70A9A0097B07F /* SnapKit in Frameworks */,
 				B5D86C9E2CA7371B00526AF0 /* StripeTerminal in Frameworks */,
-				B5BF3C002CB6F98B0025DE3C /* IOKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,7 +488,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1540;
-				LastUpgradeCheck = 1540;
+				LastUpgradeCheck = 1600;
 				TargetAttributes = {
 					B5BF3BE12CB6F6660025DE3C = {
 						CreatedOnToolsVersion = 16.0;
@@ -501,7 +499,7 @@
 				};
 			};
 			buildConfigurationList = B5DCCA722C6E43CE00C730F3 /* Build configuration list for PBXProject "StripeReaderTest" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
