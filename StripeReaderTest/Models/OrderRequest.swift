@@ -62,6 +62,8 @@ struct OrderRequest: Codable {
     
     var customer: [String: Any] {
         switch LocalStorage.environment {
+        case .metallica:
+            return Customer(name: "Ios User Test", phone: "1112223344").dictionary ?? [:]
         case .staging:
             return Customer(name: "Ios User Test", phone: "1112223344").dictionary ?? [:]
         case .production:

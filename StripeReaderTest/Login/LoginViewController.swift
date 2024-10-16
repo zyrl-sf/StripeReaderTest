@@ -160,6 +160,14 @@ class LoginViewController: BaseViewController {
         })
         alert.addAction(production)
         
+        let metallica = UIAlertAction(title: Environment.metallica.rawValue, style: .default, handler: { _ in
+            LocalStorage.environment = .metallica
+            self.stripeManager.disconnectReader() {
+                self.refreshViews()
+            }
+        })
+        alert.addAction(metallica)
+        
         let cancel = UIAlertAction(title: "Cancel", style: .cancel, handler: { _ in
 
         })

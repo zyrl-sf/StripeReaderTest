@@ -31,6 +31,8 @@ class LocalStorage {
                 UserDefaults.standard.set(newValue, forKey: "stagingToken")
             case .production:
                 UserDefaults.standard.set(newValue, forKey: "productionToken")
+            case .metallica:
+                UserDefaults.standard.set(newValue, forKey: "metallicaToken")
             }
         }
         get {
@@ -39,6 +41,8 @@ class LocalStorage {
                 return UserDefaults.standard.string(forKey: "stagingToken")
             case .production:
                 return UserDefaults.standard.string(forKey: "productionToken")
+            case .metallica:
+                return UserDefaults.standard.string(forKey: "metallicaToken")
             }
         }
     }
@@ -77,6 +81,10 @@ class LocalStorage {
                 if let encoded = try? JSONEncoder().encode(restaurant){
                     UserDefaults.standard.set(encoded, forKey: "selectedProductionRestaurant")
                 }
+            case .metallica:
+                if let encoded = try? JSONEncoder().encode(restaurant){
+                    UserDefaults.standard.set(encoded, forKey: "selectedMetallicaRestaurant")
+                }
             }
 
         }
@@ -89,6 +97,10 @@ class LocalStorage {
                 }
             case .production:
                 if let data = UserDefaults.standard.value(forKey: "selectedProductionRestaurant") as? Data, let objectDecoded = try? JSONDecoder().decode(Restaurant.self, from: data) as Restaurant {
+                    return objectDecoded
+                }
+            case .metallica:
+                if let data = UserDefaults.standard.value(forKey: "selectedMetallicaRestaurant") as? Data, let objectDecoded = try? JSONDecoder().decode(Restaurant.self, from: data) as Restaurant {
                     return objectDecoded
                 }
             }
